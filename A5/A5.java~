@@ -1,0 +1,10 @@
+import java.util.*;
+import java.io.*;
+
+
+class A5{
+  public static void main(String[] args){
+    
+  }
+  
+}

@@ -1,0 +1,406 @@
+
+
+
+
+     
+
+<html>
+<head>
+	<title>Blackboard Academic Suite</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Blackboard">
+	<meta name="copyright" content="&copy; 1997-2010 Blackboard Inc. All Rights Reserved. U.S. Patent No. 6,988,138. Additional Patents Pending.">
+	<meta name="keywords" content="Blackboard">
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+	<link type="text/css" rel="stylesheet" href="/ui/styles/blackboard.css" />
+	<link type="text/css" rel="stylesheet" href="/ui/styles/palette.css" />
+	<link type="text/css" rel="stylesheet" href="/ui/styles/grid.css" />
+	<link type="image/x-icon" rel="SHORTCUT ICON" href="/ui/bb-icon2.ico" />
+
+<script type='text/javascript' language='javascript' src='/javascript/i18n.js'></script>
+
+<script language='javascript' type='text/javascript'>
+
+var JS_RESOURCES = new Object();
+
+function _init_bundle_JS_RESOURCES() {
+
+    JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+    JS_RESOURCES['validation.maximum_length.plural'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by {2} characters.';
+    JS_RESOURCES['validation.cmp_field.required'] = 'A value must be provided for {0}\nwhen {1} field is not empty';
+    JS_RESOURCES['assessment.incomplete.confirm'] = 'The following questions may be incomplete:\n {0}\nContinue?';
+    JS_RESOURCES['validation.plain_text.confirm'] = 'To display equations correctly in this document, Smart Text or HTML format must be selected.\nClick \'OK\' to save in selected Plain Text format or click \'Cancel\' to select a new format.';
+    JS_RESOURCES['validation.portal.tool.items.remove'] = 'Remove: {0}?';
+    JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = 'Specify a location for the Reusable Object.';
+    JS_RESOURCES['validation.image_type'] = 'Unknown image type: {0}. Image may not display correctly.';
+    JS_RESOURCES['announcement.deployment.name'] = 'the name of the deployment';
+    JS_RESOURCES['assessment.incomplete.confirm.single'] = 'Question may be incomplete: {0}. Continue?';
+    JS_RESOURCES['validation.mismatch'] = 'The values entered do not match: {0}.\nConfirm: {0}.';
+    JS_RESOURCES['validation.number'] = 'A valid numeric value must be entered: {0}.';
+    JS_RESOURCES['validation.invalid_chars'] = 'Contains illegal characters: {0}.\nRemove these characters: {1}';
+    JS_RESOURCES['validation.maximum_length.singular'] = 'Must not contain more than {1} characters: {0}.\nReduce the size of the input by one character.';
+    JS_RESOURCES['invalid_char.space'] = 'space';
+    JS_RESOURCES['validation.required'] = 'A value must be provided: {0}.';
+    JS_RESOURCES['validation.system_role.reserve'] = '"bb" is not permitted at the beginning of a role ID.';
+    JS_RESOURCES['validation.email'] = 'A fully qualified email address \n(e.g. info@blackboard.com) must be entered.';
+    JS_RESOURCES['validation.percent'] = 'A valid percent value between 0 and 100 must be entered.';
+    JS_RESOURCES['validation.invalid_value'] = 'Invalid numeric value provided: {0}.';
+    JS_RESOURCES['validation.radio.required'] = 'Make a selection to continue.';
+    JS_RESOURCES['show.helptext'] = 'Show Help Text';
+    JS_RESOURCES['announcement.deployment.deploymentUrl'] = 'the url of the deployment';
+    JS_RESOURCES['announcement.affiliation.owner'] = 'the owner of the affiliation';
+    JS_RESOURCES['invalid_char.comma'] = 'comma';
+    JS_RESOURCES['validation.date.required'] = 'A complete date value must be provided: {0}.';
+    JS_RESOURCES['deployment.create.copyfromexisting.mustSelectOne'] = 'Select an existing Deployment using the Browse button.';
+    JS_RESOURCES['announcement.instrument.name'] = 'the name of the instrument ';
+    JS_RESOURCES['validation.password'] = 'Password cannot be empty or contain only spaces.';
+    JS_RESOURCES['validation.valid_course_id'] = 'Course id contains illegal characters or multibyte characters.';
+    JS_RESOURCES['warning.email'] = 'Email address is a recommended field. Users will be unable to use parts of the system without an email address.';
+    JS_RESOURCES['validation.option.required'] = 'At least one option must be selected from the list.';
+    JS_RESOURCES['validation.negative'] = 'A valid non-negative value must be entered: {0}.';
+    JS_RESOURCES['validation.cmp_field.rejected'] = 'The {0} cannot be used without a corresponding {1} value.';
+    JS_RESOURCES['field_name.substitute'] = '\'{0}\' input field';
+    JS_RESOURCES['validation.minimum_length'] = 'A minimum of {0} characters must be entered: {1}.';
+    JS_RESOURCES['announcement.instrument_context.owner'] = 'the Owner of the instrument';
+    JS_RESOURCES['hide.helptext'] = 'Hide Help Text';
+    JS_RESOURCES['validation.maximum_length.no_name.singular'] = 'Must not contain more than {0} characters.\nReduce the size of the input by one character.';
+    JS_RESOURCES['validation.time.required'] = 'A complete time value must be provided: {0}.';
+    JS_RESOURCES['notification.submit'] = 'Action already submitted.\nWait until the action is complete.';
+    JS_RESOURCES['validation.url'] = 'A valid URL \n (e.g http://www.foo.com) must be entered.';
+    JS_RESOURCES['portalmodule.section.remove'] = 'Remove: {0}?';
+    JS_RESOURCES['validation.date_equal'] = 'The start date cannot be equal to the end date.';
+    JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = 'Specify a name for the Reusable Object.';
+    JS_RESOURCES['validation.date_past.confirm'] = 'The time is in the past.\nContinue with this time?';
+    JS_RESOURCES['validation.maximum_length.no_name.plural'] = 'Must not contain more than {0} characters.\nReduce the size of the input by {1} characters.';
+    JS_RESOURCES['validation.date_past'] = 'The end date cannot be earlier than the start date.';
+
+    JS_RESOURCES.getString = i18n_get_string;
+    JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_JS_RESOURCES();
+
+</script>
+<script language='javascript' type='text/javascript'>
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_NAME.03169'] = 'ARIAL.TTF';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = ',';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\.[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '0';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'SUN MON TUE WED THU FRI SAT';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'MDY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Welcome, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME_ORDER_VERTICAL.07846'] = 'title,first_name,middle_name,last_name';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'MM/dd/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'January February March April May June July August September October November December';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_SIZE.03168'] = '8';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME_ORDER_HORIZONTAL.07847'] = '{title} {first_name} {middle_name} {last_name}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'Jan Feb  Mar Apr  May Jun Jul Aug Sep Oct Nov Dec';
+    LOCALE_SETTINGS['float.format'] = '^[0-9]*(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^[-]?[0-9]*(\\.[0-9]+)?$';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.REPORT_FONT_PATH.03170'] = 'C:/WINNT/Fonts';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME_ORDER_HORIZONTAL_SHORT.07848'] = '{last_name}, {first_name} {middle_name}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'MM/DD/YY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '0';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME_GREETING'] = 'Welcome, {first_name}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME_SHORT_ORDER'] = '{first_name} {last_name}';
+    LOCALE_SETTINGS['number_format.decimal_point'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+<script language='javascript' type='text/javascript' src='/javascript/validateForm.js'></script>
+
+
+
+
+<script language='javascript' type='text/javascript' src='/javascript/accessibleSelect.js'></script>
+
+
+</head>
+
+
+
+
+<body class="bbDefault" onLoad = "if (typeof(initEditors) == 'function') { initEditors(); }; document.forms[0].user_id.focus()">
+
+
+ 
+            
+<TABLE CELLSPACING="0" BORDER="0" CELLPADDING="0">
+
+<TR>
+<TD ALIGN="center" COLSPAN="2">
+<img src="/images/spacer.gif" height="10" width="1" hspace="0" vspace="0" alt="" border="0" />
+</TD>                               
+</TR>
+
+<TR>
+     
+<TD VALIGN="top">
+<TABLE CELLSPACING="0" BORDER="0" CELLPADDING="0">
+<TR>
+<TD WIDTH="500" HEIGHT="100%" VALIGN="top">
+
+
+
+
+
+
+
+
+
+
+
+<TABLE CELLSPACING="0" BORDER="0" CELLPADDING="3" WIDTH="100%" BGCOLOR="#FFFFFF">
+<TR>
+<TD WIDTH="500">
+<IMG align="LEFT" BORDER="0" SRC="/images/ci/logos/BbBlackboard_R_URL-f.gif" ALT="Blackboard Inc." >
+<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+Welcome to <B><I>Blackboard Academic Suite</I></B>. Enter your username and password to access the system.
+</FONT>
+<BR> 
+<BR>
+</TD>
+</TR>
+</TABLE>
+
+
+
+
+
+
+
+<TABLE CELLSPACING="0" BORDER="0" CELLPADDING="3" WIDTH="100%" BGCOLOR="#FFFFFF">
+<TR>
+
+<TD WIDTH="25%" VALIGN="top">&nbsp; <BR> <FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+
+<P>Click the <B>Preview</B> button below to access as a guest.
+
+<BR>
+
+<a href="/webapps/login?action=guest_login" class="inlineAction">Preview</a>
+
+
+
+
+
+
+
+
+</FONT>
+</TD> 
+
+</TR>
+</TABLE>
+
+
+</TD>
+</TR>
+</TABLE>
+</TD> 
+
+<TD WIDTH="250" HEIGHT="100%" VALIGN="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT language="JAVASCRIPT" SRC="/javascript/base64.js"></SCRIPT>   
+
+
+
+<SCRIPT language="JAVASCRIPT" SRC="/javascript/md5.js"></SCRIPT>   
+
+
+
+<SCRIPT language="JAVASCRIPT" SRC="/javascript/md5-legacy.js"></SCRIPT>   
+
+
+
+<!--inline script -->
+<SCRIPT language="JAVASCRIPT" >
+
+
+   
+  document.cookie = "cookies_enabled=yes";
+  if (!document.cookie) {
+    document.location.href="/nocookies.html";
+  }
+  document.cookie = "cookies_enabled=yes;expires=Thu, 01-Jan-1970 00:00:01 GMT";
+
+var _useChallenge = false;
+function validate_form(form)
+{
+  form.user_id.value = form.user_id.value.replace(/^\s*|\s*$/g,"");
+  if ( form.user_id.value == "" || form.password.value == "" )
+  {
+    alert( "Enter a username and password." );
+    return false;
+  }
+  //short-cut if challenge/response is disabled.
+  if ( !_useChallenge )
+  {
+    form.encoded_pw.value = base64encode( form.password.value );
+    form.encoded_pw_unicode.value = b64_unicode( form.password.value );
+    form.password.value =  "";
+    return true;
+  }
+
+  var passwd_enc = hex_md5(form.password.value);
+  var encoded_pw_unicode = calcMD5(form.password.value);
+  var final_to_encode = passwd_enc + form.one_time_token.value;
+  form.encoded_pw.value = hex_md5(final_to_encode);
+  final_to_encode = encoded_pw_unicode + form.one_time_token.value;
+  form.encoded_pw_unicode.value = calcMD5(final_to_encode);
+  form.password.value = "";
+  return true;
+}
+
+</SCRIPT>
+<FORM ONSUBMIT="return validate_form(this)" METHOD="POST" ACTION="https://blackboard.olemiss.edu/webapps/login/" NAME="login" >
+   		<INPUT VALUE="login" NAME="action" TYPE="HIDDEN">
+                <INPUT VALUE="" NAME="remote-user" TYPE="HIDDEN">
+                <INPUT VALUE="/courses/1/Csci_433_Section_1_RICE_2009-2010_SPRG/content/_393672_1/A3_input.txt?bsession=8241560&bsession_str=session_id=8241560,user_id_pk1=11735,user_id_sos_id_pk2=1,one_time_token=" NAME="new_loc" TYPE="HIDDEN">
+                <INPUT VALUE="" NAME="auth_type" TYPE="HIDDEN">
+                <INPUT VALUE="" NAME="one_time_token" TYPE="HIDDEN">
+                <INPUT VALUE="" NAME="encoded_pw" TYPE="HIDDEN">
+                <INPUT VALUE="" NAME="encoded_pw_unicode" TYPE="HIDDEN">
+<TABLE>
+  <TR>
+        <TD>
+          <TABLE CELLSPACING="0" BORDER="0" CELLPADDING="0" BGCOLOR="cccccc">
+
+
+                <TR>
+                  <TD BGCOLOR="#00009C" VALIGN="center" nowrap>
+                        <img src="/images/spacer.gif" height="28" width="5" hspace="0" vspace="0" alt="" border="0" />
+                        <FONT SIZE="4" FACE="Arial, Helvetica, sans-serif" COLOR="white">
+                        Log in using your WebID and password.
+                        </FONT>
+                        <img src="/images/spacer.gif" height="28" width="5" hspace="0" vspace="0" alt="" border="0" />
+                  </TD>
+                </TR>
+
+                <TR>
+                  <TD>
+                        <TABLE CELLSPACING="8" BORDER="0" CELLPADDING="0" WIDTH="100%">
+                          <TR>
+                                <TD VALIGN="top">
+                                  <FONT SIZE="1" FACE="Arial, Helvetica, sans-serif" COLOR="black">
+                                  Enter your WebID and password and click the 'Login' button below. <br><br> If your password has expired, you will need to <a href='https://my.olemiss.edu/irj/portal/anonymous?NavigationTarget=ROLES://portal_content/Guest/GuestiViews/changePasswordPortaliViewID'>change it now</a>. <br><br>
+                                  </FONT>
+                                </TD>
+                          </TR>
+                          <TR>
+		                                <TD>
+		                                  <FONT SIZE="1" FACE="Arial, Helvetica, sans-serif">
+		                                  <label for="user_id"><font color=black><b>WEB ID:</b></font></label>
+		                                  </FONT>
+		                                  <BR>
+		                                  <INPUT TYPE="text" NAME="user_id" ID="user_id"  SIZE=25 MAXLENGTH=50 tabindex="1">
+		                                </TD>
+		                          </TR>
+		                          <TR>
+		                                <TD>
+		                                  <FONT SIZE="1" FACE="Arial, Helvetica, sans-serif">
+		                                  <label for="password"><font color=black><b>PASSWORD:</b></font></label>
+		                                  </FONT>
+		                                  <BR>
+		                                  <INPUT SIZE="25" NAME="password" id="password" TYPE="password" tabindex="2">
+		                                </TD>
+                          </TR>
+                          
+                          <TR>
+                                <TD>
+                                  <TABLE width="100%" cellspacing="0" cellpadding="0" border="0">
+                                        <TR>
+
+                                          <TD align="RIGHT">
+  		                                    <input type="image" alt="Log In" name="Login" src="/images/ci/formbtns/login_off.gif" tabindex="3" border="0">
+                                          </TD>
+                                        </TR>
+
+                                  </TABLE>
+                                </TD>
+                          </TR>
+                        </TABLE>
+                  </TD>
+                </TR>
+
+          
+          </TABLE>
+          </FORM>
+        </TD>
+  </TR>
+</TABLE>
+
+
+</TD>
+</TR> 
+
+<TR>
+<TD ALIGN="center" COLSPAN="2">
+<P> 
+&nbsp; 
+<BR> 
+<script type="text/javascript">function showCopyrightDetail(){    if(document.getElementById('copyrightDetail').style.display=="none" || document.getElementById('copyrightDetail').style.display=="")    {        document.getElementById('copyrightDetail').style.display="block";    }    else    {        document.getElementById('copyrightDetail').style.display="none";    }}</script>                          <div style="text-align:center">    <div class="newCopyright">        <img src='/images/ci/logos/Powered_Bb_090.jpg' alt='Powered by Blackboard' vspace='3' border='0'>        <a href="Javascript:showCopyrightDetail()"><I>Blackboard Academic Suite&#8482;</I></a><br/>        &copy; 1997-2010 Blackboard Inc. All Rights Reserved. U.S. Patent No. 6,988,138. Additional Patents Pending.<br/>        Accessibility information can be found at <a href="http://access.blackboard.com">http://access.blackboard.com</a>.    </div>    <div class="copyrightDetailContents" id="copyrightDetail" onClick="showCopyrightDetail()">    <div style="float:right">(Click to close)</div>    <I>Blackboard Academic Suite&#8482;</I><BR/>&nbsp;&nbsp;<I>Blackboard Learning System&#8482; - Enterprise License</I> (8.0.422.8)    </div>     </div>
+</TD>
+</TR>
+</TABLE>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+Bears: 1-1-1
+W 22-16 Packers
+T 14-14 Falcons
+L 3-16 Saints
+
+Cowboys: 0-1-0
+L 3-24 Giants
+
+Falcons: 0-1-1
+L 41-43 Patriots
+T 14-14 Bears
+
+Giants: 2-2-0
+L 3-23 Vikings
+W 25-24 Lions
+L 20-37 Patriots
+W 24-3 Cowboys
+
+Lions: 1-2-0
+L 12-48 Packers
+W 17-14 Saints
+L 24-25 Giants
+
+Packers: 2-1-0
+W 48-12 Lions
+L 16-22 Bears
+W 20-0 Vikings
+
+Panthers: 1-1-0
+W 20-17 Steelers
+L 3-5 Saints
+
+Patriots: 2-0-0
+W 43-41 Falcons
+W 37-20 Giants
+
+Saints: 2-1-0
+L 14-17 Lions
+W 16-3 Bears
+W 5-3 Panthers
+
+Steelers: 1-1-0
+L 17-20 Panthers
+W 30-19 Vikings
+
+Vikings: 1-2-0
+W 23-3 Giants
+L 0-20 Packers
+L 19-30 Steelers

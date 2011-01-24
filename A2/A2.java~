@@ -1,0 +1,128 @@
+import java.io.*;
+import java.util.*;
+
+
+
+
+/*===========================================
+ * CLASS FOR NODES IN THE LINKED LIST
+ * ===========================================*/
+
+class adjNode{
+ public int vertex;
+ public adjNode nextVertex;
+ 
+ public adjNode(int j){
+  vertex=j;
+  nextVertex=null;
+ }
+}//end class adjNode
+
+
+
+/*========================================
+ * CLASS FOR LINKED LISTS WITHIN THE ARRAY
+ * =======================================*/
+
+class adjList{
+ public adjNode firstNode;
+ public adjNode lastNode;
+ 
+ //constructor
+ public adjList(){
+  firstNode=null;
+  lastNode=null;
+ }
+ 
+ /*
+  * checks to see if current adjList is empty
+  * */
+ public boolean isEmptyAdjList(){
+  return firstNode==null; 
+ }
+ 
+ //add vertex to end of the current vertex's adjList
+ public void addVertex(adjNode new_node){
+   if(isEmptyAdjList()){
+    firstNode= new_node;
+    lastNode= new_node;
+   }else{
+    lastNode.nextVertex=new_node;
+    lastNode=new_node;
+   }
+ }//end addVertex
+ 
+ //prints each adjList
+ public void printList(){
+  adjNode current = firstNode;
+  if(isEmptyAdjList()){
+  }
+  else{
+    while(current!=lastNode){
+      System.out.print(current.vertex);
+      current=current.nextVertex;
+  }
+    System.out.print(current.vertex);
+ }
+}//end printList
+}//end class adjList
+
+/*========================================
+ * MAIN METHOD
+ * ===================================*/
+class A2{
+  static Scanner console = new Scanner(System.in);
+  public static void main(String [] args){
+    while(console.hasNext()){
+      int n = console.nextInt();
+      readMatrix(n);
+   }
+  }//end main method
+
+  //Method for reading in values of matrix and placing them in adjacency list 
+  //CALLS DFS
+  public static void readMatrix(int n){
+   
+    adjList[] arrayOfLists = new adjList[n];
+    for(int c=0 ; c<n ;c++){
+     arrayOfLists[c]= new adjList(); 
+    }
+      for(int i = 0 ; i < n  ; i++){
+        String s = console.next();
+        for(int j = 0; j < n   ; j++){
+          if(s.charAt(j)=='1'){
+            arrayOfLists[i].addVertex(new adjNode(j));
+          }
+      }
+    }
+      boolean[] visit = new boolean[n];
+      System.out.println("Depth-First Search:");
+      for(int k = 0 ; k< n ; k++){
+        setFalse(visit);
+        dfs(arrayOfLists, k, n , visit);
+        System.out.println();
+      }
+ }//end method readMatrix()
+ 
+  public static void dfs(adjList[] arrayList, int start, int length , boolean[] visit){
+    System.out.print(start+1 + " ");
+    adjNode current =  arrayList[start].firstNode;
+    visit[start]=true;
+    
+    while(current != null){
+      if(visit[current.vertex] == false ){
+        dfs(arrayList, current.vertex, length, visit);
+      }
+      current= current.nextVertex;
+    }
+ }//end method dfs
+  
+  public static boolean[] setFalse(boolean array[]){
+    for(int i=0; i < array.length; i ++){
+      array[i]=false;
+    }
+    return array;
+ }//end method setfalse
+  
+}//end class p2
+  

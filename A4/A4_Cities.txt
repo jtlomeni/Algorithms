@@ -1,0 +1,39 @@
+Akron          AL CO IA IL IN KS MI MO MS NE NY OH PA
+Albany         AL CA GA IA IL IN KY LA MN MO NH NY OH OK OR PA TN TX VT WI WY
+Albuquerque    NM
+Alexandria     AL IN KS KY LA MN MO NE NH NJ OH PA SD TN VA
+Allentown      AZ FL GA IL MS MT NJ NY OH OR PA SC VA WA WV
+Altoona        AL FL IA KS LA OH PA WA WI
+Amarillo       TX
+Anchorage      AK KY LA MS NJ TX
+Anderson       AK AL AR CA IA ID IL IN KS KY MI MN MO NC NJ NV NY OH OK OR PA SC TN TX WI
+Annapolis      CA IL IN MD MO OH WA
+Appleton       AL AR CO ID IL MD ME MN NY OH OR SC TN WA WI
+Arlington      AL AZ CA CO FL GA IA IL IN KS KY LA MA MD MN MO MS NC NE NJ NY OH OK OR PA SD TN TX VA VT WA WI WV WY
+Asheville      NC
+Ashland        AL CA DE GA IA IL IN KS KY LA MA MD ME MI MO MS MT NC NE NH NJ NY OH OK OR PA SC TN TX VA WI WV
+Atlanta        AR CA CO DE GA IA ID IL IN KS KY LA MI MO MS NE NV NY OH TX
+Atlantic City  NJ
+Auburn         AL CA CO DE FL GA IA IL IN KS KY MA ME MI MO MS NC ND NE NH NJ NY OH OR PA RI SC TX VA WA WV WY
+Augusta        AR GA IA IL IN KS KY LA MD ME MI MN MO MT NJ NY OH OR TX WI WV
+Austin         AR CO IA IN KS KY MI MN MO MS MT NC NV NY OH OK OR PA TN TX WA
+Bakersfield    CA MO TX VT
+Baltimore      CO IA KY MD NC NY OH TN VT
+Bangor         AL CA IA KS KY ME MI NY PA VA WA WI
+Barre          MA VT
+Baton Rouge    LA
+Beaumont       CA KS KY MS OH PA TX VA WI
+Bettendorf     IA
+Billings       MI MO MT NY OK WV
+Biloxi         MS
+Binghamton     CA NY WI
+Birmingham     AL GA IA IL IN KS KY MI MO MS NJ OH PA VA
+Bismarck       AR CA IL MO ND OH WV
+Bloomington    CA IA ID IL IN KS KY MD MN MO NC NE NY OH OK PA TN TX UT WI
+Boise          ID TX WA
+Boston         AL AR CT GA IN KY LA MA MI MO NY OH PA TN TX VA
+Branson        CO MO
+Bridgeport     AL AZ CA CO CT FL IA IL IN KS KY MD MI MS NE NJ NY OH OK OR PA TN TX VA WA WI WV
+Bristol        CO CT FL GA IA IL IN LA MD ME MI MN NH NY OH PA RI SD TN TX VA VT WA WI WV
+Buffalo        AL IA IL IN KS KY ME MN MO MT NC ND NE NY OH OK PA SC SD TN TX WV WY
+Burlington     AL AR CA CO CT IA IL IN KS KY MA ME MI NC ND NJ NY OH OK OR PA TN TX VT WA WI WV WY
